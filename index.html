@@ -3,19 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio</title>
+    <title>Sai Siddharth P - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        header {
+            background-color: #006699;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            animation: fadeIn 2s;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: slideInDown 1s;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: block;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #006699;
+            margin-bottom: 10px;
+        }
+        section {
+            margin-bottom: 20px;
+            animation: fadeInUp 1s;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #006699;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeIn 2s;
+        }
+        a {
+            color: #0099cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header, footer {
+                padding: 1em 0;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            main {
+                padding: 10px;
+                margin: 10px;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Sai Siddharth's portfolio</h1>
-    <h2>Enthusiastic Web Developer</h2>
-    <hr>
-    <h3><b><i>My Projects</i></b></h3>
-    <h3><a href="./public/movie-ranking.html">Movie Ranking project</a></h3>
-    <img src="./assets/images/movierankingsai.png" alt="a movie ranking image" height="200"/>
-    <h3><a href="./public/birthday-invite.html">Birthday invite Project</a></h3>
-    <img src="./assets/images/birthday sai.png" alt="a image showing a birthday invite" height="200"/>
-    <hr>
-    <a href="./public/about.html">About us</a> <a href="./public/contact.html">contact us</a>
-    
+    <header>
+        <img src="sai.jpg" alt="Sai Siddharth P" class="profile-photo">
+        <h1>Sai Siddharth P</h1>
+        <p>Chennai, India | <a href="mailto:saisiddharth448@gmail.com" style="color: #fff;">saisiddharth448@gmail.com</a> | <span style="color: #fff;">9585649202</span></p>
+        <p><a href="https://www.linkedin.com/in/sai-siddharth-p-a14955224/" target="_blank">LinkedIn</a> | <a href="https://github.com/Saisiddharth-p" target="_blank">GitHub</a></p>
+    </header>
+    <main>
+        <section>
+            <h2>Education</h2>
+            <p><strong>Bachelor of Engineering - Electronics and Communication Engineering</strong><br>
+            Chennai Institute of Technology, Chennai<br>
+            CGPA: 8.3</p>
+        </section>
+        <section>
+            <h2>Professional Experience</h2>
+            <h3>Internship on Embedded Systems</h3>
+            <p>DLK Technologies</p>
+            <ul>
+                <li>Acquired practical skills in embedded systems and IoT device operations through hands-on experience</li>
+                <li>Played a key role in the development and implementation of a visitor counter project</li>
+                <li>Demonstrated practical application of theoretical knowledge in the realm of Internet of Things</li>
+                <li>Enhanced problem-solving abilities and technical expertise by addressing challenges encountered during the visitor counter project</li>
+            </ul>
+            <h3>Internship in ATS and CNS</h3>
+            <p>Airport Authority of India</p>
+            <ul>
+                <li>Experienced the real-time working of Air Traffic Services at AAI Chennai</li>
+                <li>Learned about the equipment and its functions used for communication, navigation, and surveillance of aircraft</li>
+                <li>Acquired knowledge in ensuring the safety of aircraft throughout their entire journey, to prevent collisions from the moment of takeoff to the point of landing</li>
+                <li>Explored and gained an understanding of the utilization of imaginary routes, which serve as navigational paths followed by aircraft during their flights</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <h3>Simple Banking Application</h3>
+            <p><strong>Technologies:</strong> Java, MySQL, HTML, CSS</p>
+            <ul>
+                <li>Developed a robust banking application using Java</li>
+                <li>Designed to manage customer accounts, transactions, and balance inquiries efficiently</li>
+            </ul>
+            <h3>Traffic Sign Board Recognition and Voice Assistance</h3>
+            <p><strong>Technologies:</strong> Python, Keras, TensorFlow</p>
+            <ul>
+                <li>Trained the samples of traffic signboards using OpenCV and Python</li>
+                <li>Developed a machine learning model for traffic sign board detection</li>
+                <li>Implemented a voice alert system to enhance driver awareness</li>
+            </ul>
+            <p><a href="https://github.com/Saisiddharth-p/traffic-sign-recognition-and-driver-alert" target="_blank">View Project</a></p>
+            <h3>Plant Disease and Crop Maturity Detection</h3>
+            <p><strong>Technologies:</strong> Python, TensorFlow, CNN</p>
+            <ul>
+                <li>Developed an innovative plant disease and crop maturity detection system using transfer learning & image processing techniques</li>
+                <li>Implemented a comprehensive solution that identifies diseases and assesses crop maturity</li>
+                <li>Provided actionable recommendations for effective treatments and preventive measures</li>
+            </ul>
+            <p><a href="https://github.com/Saisiddharth-p/plant-disease-and-crop-maturity-detection-using-machine-learning" target="_blank">View Project</a></p>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Programming in Java - NPTEL - IIT Kharagpur, May 2024</li>
+                <li>Cybersecurity Essentials - Cisco Networking Academy, Feb 2023</li>
+                <li>Foundations: Data Everywhere - Coursera, Sep 2023</li>
+                <li>CCNA 1 & CCNA 2 - Cisco Networking Academy, Jan 2024</li>
+                <li>Introduction to Cybersecurity - Cisco Networking Academy, Jan 2023</li>
+                <li>Fundamentals of Digital Marketing - Google, Jan 2022</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>C Programming</li>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>CSS</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Tech Event Organizer at a Technical Symposium</li>
+                <li>700+ Programs Solved in Skillrack</li>
+                <li>Global Rank 7103 in CodeChef Contest</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sai Siddharth P</p>
+    </footer>
 </body>
 </html>
